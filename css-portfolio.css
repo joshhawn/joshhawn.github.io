@@ -18,9 +18,14 @@ body {
 }
 
 
-
 div {
   display: block;
+}
+
+.sticky-header {
+  position: sticky;
+  top:0px;
+  z-index: 1;
 }
 
 .section-header {
@@ -29,6 +34,52 @@ div {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight:800;
   text-align:center;
+  position: sticky;
+  top: 6px;
+  width: 100%;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.29);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
 a {
@@ -44,9 +95,19 @@ p {
 /* The side navigation menu */
 
 #navopen {
-  position: sticky;
-  top: 10px;
-  border: white;
+  position:fixed;
+  top:50px;
+  z-index: 21.5;
+  height: 45px;
+  background: rgba(215, 220, 191, 0.62);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 20px;
+  border: 1px solid rgba(14, 11, 11, 0.819);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 8px 4px rgba(255, 255, 255, 0.4);
 }
 
 .sidenav {
@@ -56,10 +117,11 @@ p {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: rgba(215, 220, 191, 0.98);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  opacity: 99%;
 }
   
 /* The navigation menu links */
@@ -67,14 +129,14 @@ p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
   
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: gray;
 }
   
 /* Position and style the close button (top right corner) */
@@ -84,6 +146,7 @@ p {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  z-index:3;
 }
   
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

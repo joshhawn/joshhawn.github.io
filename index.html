@@ -15,13 +15,13 @@
     <a href="#photography">Photography</a>
     <a href="#contact">Contact</a>
    </div>
-   <div id="navopen">
+   <div id="navopen" class="content-header">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
     <script src="js-portfolio.js"></script>
    </div>
     <main>
       <div> <!--welcome section-->
-        <div>
+        <div class="sticky-header">
           <h1 id="about" class="section-header">About</h1>
         </div>
         <div class="welcome-intro">
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div> <!--projects section-->
-        <div>
+        <div class="sticky-header">
           <h1 id="projects" class="section-header">Projects</h1>
         </div>
         <div class="project-container">
@@ -80,7 +80,9 @@
         </div>
       </div>
       <div> <!--resume section-->
-        <h1 id="resume" class="section-header">Resume</h1>
+        <div class="sticky-header">
+          <h1 id="resume" class="section-header">Resume</h1>
+        </div>
           <h2>Downloadable PDF <a href="./Projects/portfolio/Josh_Hawn_Resume.pdf" target="_blank">here</a></h2>
           <h2>Experience</h2>
             <h4>GlobalGiving Foundation</h4>
@@ -122,25 +124,29 @@
               <li>mapping</li>
               <li>business-y stuff</li>
             </ul>
-            <div class="resume-link">Or just click <a href="https://www.canva.com/design/DAGM0Hv-oIQ/CmkWdEf0irP-5mx4J9sA2Q/view?utm_content=DAGM0Hv-oIQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha714dc80ba">here</a> to download my PDF resume :) </div>
+          <div class="resume-link">Or just click <a href="https://www.canva.com/design/DAGM0Hv-oIQ/CmkWdEf0irP-5mx4J9sA2Q/view?utm_content=DAGM0Hv-oIQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha714dc80ba">here</a> to download my PDF resume :) </div>
       </div>
       <div> <!--photography section-->
-        <h1 id="photography" class="section-header">Photography</h1>
+        <div class="sticky-header">
+          <h1 id="photography" class="section-header">Photography</h1>
+        </div>
         <div class="project-tile">
-        <div class="photography">
-            <p>Non-professional pictures</a> I've taken.</p>
-            <div class="gallery">
-              <img src="WebsitePhotos\20240104104400_IMG_8942.JPG">
-              <img src="WebsitePhotos\20240104101618_IMG_8910.JPG">
-              <img src="WebsitePhotos\20240103055944_IMG_8828.JPG">
-              <img src="WebsitePhotos\1000000443-01.jpeg">
-            </div>
-          </div> 
+          <div class="photography">
+              <p>Non-professional pictures</a> I've taken.</p>
+              <div class="gallery">
+                <img src="WebsitePhotos\20240104104400_IMG_8942.JPG">
+                <img src="WebsitePhotos\20240104101618_IMG_8910.JPG">
+                <img src="WebsitePhotos\20240103055944_IMG_8828.JPG">
+                <img src="WebsitePhotos\1000000443-01.jpeg">
+              </div>
+          </div>
         </div>
       </div>
       <div> <!--contact section-->
-        <div class="contact-info">
+        <div class="contact-info" class="sticky-header">
           <h1 id="contact" class="section-header">Contact</h1>
+        </div>
+        <div>
           <p>Email: </p>
           <form>
           <p>Your email</p>
