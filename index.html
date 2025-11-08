@@ -6,23 +6,33 @@
     <link rel="stylesheet" href="css-portfolio.css" />
     <title>Josh's ePortfolio</title>
   </head>
-  <body>
-   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#photography">Photography</a>
-    <a href="#contact">Contact</a>
-   </div>
-   <div id="navopen" class="content-header">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
-    <script src="js-portfolio.js"></script>
-   </div>
+  <body class="body">
+    <header class="header">
+	    <h1>Hi, I'm Josh, welcome to my page</h1>
+    </header>
+    <nav class="navbar">
+	    <div class="brand">
+		    <a href="#top" class="nav__link"> <img src="WebsitePhotos/Component 1.svg"/><span class="logo">Josh Hawn</span></a>
+	    </div>
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#photography" class="nav__link">Photography</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <main>
-      <div> <!--welcome section-->
-        <div class="sticky-header">
-          <h1 id="about" class="section-header">About</h1>
+      <section class="home"> <!--home section updated-->
+        <div id="home">
+          <h1 class="section-header">Home</h1>
+        </div>
+      </section>
+      <section class="about"> <!--about section updated-->
+        <div id="about">
+          <h1 class="section-header">About</h1>
         </div>
         <div class="welcome-intro">
           <p>Hello, thank you for coming to my webpage, here you'll find all (or most) things Josh! From my professional work, to interest subjects, to photography, there is lots to digest. This is a project in my self-taught developer journey, so while it will may feel bare now, come back soon for gradual updates.</p>
@@ -30,9 +40,10 @@
           <p>Part of that is that I don't like being stagnant, continuous learning is a strong passion. Finance, geography, photography, development, are all areas that can yield nuance insights from the diverse types of knowledge that stem from each, the approaches, and in general what shines through the intersectional fields.</p>
         </div>
       </div>
-      <div> <!--projects section-->
-        <div class="sticky-header">
-          <h1 id="projects" class="section-header">Projects</h1>
+      </section>
+      <section class="projects"> <!--projects section updated-->
+        <div id ="projects">
+          <h1 class="section-header">Projects</h1>
         </div>
         <div class="project-container">
           <div class="project-preview" href="#">
@@ -41,7 +52,6 @@
               <h1>United States Pay Gap</h1>
               <p>Simple one-pager study on the closing (but still expansive) pay gap between men and women. Written by Josh Hawn.</p>
               <a class="project-btn" href="#">View Infographic</a>
-
               <ul>
                 <li>Skills:</li>
                 <li><a href="#">Design</a></li>
@@ -56,7 +66,6 @@
               <p>Non-Thesis Study, the spatial relationship of waste facilities which accept food waste for biodegration
                 and which do not. Written/Led by Josh Hawn.</p>
               <a class="project-btn" href="https://www.eportfolio-josh-hawn.com/academic-projects">View Project</a>
-          
               <ul>
                 <li>Skills:</li>
                 <li><a href="#">Spatial Analysis</a></li>
@@ -78,83 +87,33 @@
             </div>
           </div>
         </div>
-      </div>
-      <div> <!--resume section-->
-        <div class="sticky-header">
-          <h1 id="resume" class="section-header">Resume</h1>
-        </div>
-          <h2>Downloadable PDF <a href="./Projects/portfolio/Josh_Hawn_Resume.pdf" target="_blank">here</a></h2>
-          <h2>Experience</h2>
-            <h4>GlobalGiving Foundation</h4>
-              <ul>Senior Treasury Associate
-                <li>Work with product managers, engineers, and business partners to upgrade
-                  and scale our systems, translating operational needs into tangible products.</li>
-                <li>Contribute highly detailed documentation to scale with organization growth.</li>
-                <li>Create custom SQL queries to identify operational and financial gaps.</li>
-                <li>Enhanced the reconciliation process, boosting efficiency by 18%.</li>
-                <li>Continue processing of donation receiving and distribution through an
-                  increased capacity of 15% over the last year.</li>
-              </ul>
-              <ul>Treasury Associate
-                <li>Primary contributer to the processing of thousands of donations and oversee
-                  their worldwide distribution to an average of 1800 organizations, at a volume
-                  of $2 million dollars, per month.</li>
-                <li>Reconcile several high volume organizational bank accounts.</li>
-                <li>Conduct research to support policy changes and make data-driven decisions.</li>
-                <li>Coordinate with cross-functional teams to ensure timely disbursement of funds
-                  and increase operational efficiency.</li>
-              </ul>
-            <h4>University of Idaho</h4>
-              <ul>Management Assistant
-                <li>Managed sensitive data in a simple cataloging system while maintaining a
-                  99.5% data entry accuracy rate.</li>
-                <li>Conducted workshops for graduate students, resulting in a 10% reduction of
-                  late form submissions.</li>
-                <li>Collaborated with other College administrators and faculty to draft, edit, and
-                  interpret UI Catalog policy and procedures</li>
-              </ul>
-          <h2>Education</h2>
-            <h3>ASU</h3>
-              <p>masters of geography</p>
-            <h3>WSU</h3>
-              <p>bachelors of business administration focusing in finance and sustainable development</p>
-          <h2>Skills</h2>
-            <ul>
-              <li>coding</li>
-              <li>mapping</li>
-              <li>business-y stuff</li>
-            </ul>
-          <div class="resume-link">Or just click <a href="https://www.canva.com/design/DAGM0Hv-oIQ/CmkWdEf0irP-5mx4J9sA2Q/view?utm_content=DAGM0Hv-oIQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha714dc80ba">here</a> to download my PDF resume :) </div>
-      </div>
-      <div> <!--photography section-->
-        <div class="sticky-header">
-          <h1 id="photography" class="section-header">Photography</h1>
+      </section>
+      <section class="photograpy"><!--photography section updated-->
+        <div id="photography">
+          <h1 class="section-header">Photography</h1>
         </div>
         <div class="project-tile">
-          <div class="photography">
               <p>Non-professional pictures</a> I've taken.</p>
               <div class="gallery">
                 <img src="WebsitePhotos\20240104104400_IMG_8942.JPG">
                 <img src="WebsitePhotos\20240104101618_IMG_8910.JPG">
                 <img src="WebsitePhotos\20240103055944_IMG_8828.JPG">
                 <img src="WebsitePhotos\1000000443-01.jpeg">
-              </div>
           </div>
         </div>
       </div>
-      <div> <!--contact section-->
-        <div class="contact-info" class="sticky-header">
+      </section>
+      <section class="contact"> <!-- contact section updated-->
+        <div id="contact">
           <h1 id="contact" class="section-header">Contact</h1>
         </div>
-        <div>
-          <p>Email: </p>
-          <form>
-          <p>Your email</p>
-          <p>Your inquiry<p>
-            <button>Submit</button>
-          <a id="profile-link" href="https://github.com/joshhawn" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-        </div>
-      </div>
+
+      </section>
     </main>
+    <footer class="footer">
+      <h1>Footer</h1>
+
+      
+    </footer>
   </body>
 </html>
