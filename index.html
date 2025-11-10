@@ -8,7 +8,11 @@
   </head>
   <body class="body">
     <header class="header">
-	    <h1>Hi, I'm Josh, welcome to my page</h1>
+	    <h1>Hi, I'm Josh, scroll to learn more about me and my work</h1>
+      <a href="#home"><svg class="down_arrow_svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none">
+      <path opacity="0.2" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#eeeeee" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path opacity="0.4" d="M8.4707 10.7402L12.0007 14.2602L15.5307 10.7402" stroke="#eeeeee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg></a>
     </header>
     <nav class="navbar">
 	    <div class="brand">
@@ -24,26 +28,28 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <main class="all-content">
       <section class="home"> <!--home section updated-->
         <div id="home">
           <h1 class="section-header">Home</h1>
         </div>
+        <div class="section-details">
+          <div class="home-details">Hey there, thank you for visiting my webpage. This itself is a project in my self-taught developer journey, I'll keep reiterating and adding more as I learn, so feel free to reach out with any questions about ongoing projects!</div>
       </section>
       <section class="about"> <!--about section updated-->
         <div id="about">
           <h1 class="section-header">About</h1>
         </div>
-        <div class="welcome-intro">
-          <p>Hello, thank you for coming to my webpage, here you'll find all (or most) things Josh! From my professional work, to interest subjects, to photography, there is lots to digest. This is a project in my self-taught developer journey, so while it will may feel bare now, come back soon for gradual updates.</p>
-          <p>I'm from the Pacific Northwest, on the eastern side of Washington. I grew up in a small town with hopes of seeing and understanding the world...I'm steadily on my way, and more and more does this just feel like growing into adulthood.</p>
-          <p>Part of that is that I don't like being stagnant, continuous learning is a strong passion. Finance, geography, photography, development, are all areas that can yield nuance insights from the diverse types of knowledge that stem from each, the approaches, and in general what shines through the intersectional fields.</p>
+        <div class="section-details">
+          <p>I'm a self-starter that enjoys learning new things, but more importantly as mmany details as possible about all apects of a process, so I can best utilize my skills and know how to resource the remainder</p>
         </div>
-      </div>
       </section>
       <section class="projects"> <!--projects section updated-->
         <div id ="projects">
           <h1 class="section-header">Projects</h1>
+        </div>
+        <div class="section-details">
+          <p>Small projects I've completed related to geography studies</p>
         </div>
         <div class="project-container">
           <div class="project-preview" href="#">
@@ -52,7 +58,7 @@
               <h1>United States Pay Gap</h1>
               <p>Simple one-pager study on the closing (but still expansive) pay gap between men and women. Written by Josh Hawn.</p>
               <a class="project-btn" href="#">View Infographic</a>
-              <ul>
+              <ul class="project-skills">
                 <li>Skills:</li>
                 <li><a href="#">Design</a></li>
                 <li><a href="#">Data Analysis</a></li>
@@ -66,7 +72,7 @@
               <p>Non-Thesis Study, the spatial relationship of waste facilities which accept food waste for biodegration
                 and which do not. Written/Led by Josh Hawn.</p>
               <a class="project-btn" href="https://www.eportfolio-josh-hawn.com/academic-projects">View Project</a>
-              <ul>
+              <ul class="project-skills">
                 <li>Skills:</li>
                 <li><a href="#">Spatial Analysis</a></li>
                 <li><a href="#">Web Mapping</a></li>
@@ -92,26 +98,47 @@
         <div id="photography">
           <h1 class="section-header">Photography</h1>
         </div>
+        <div class="section-details">
+          <p>Sample photos, I prefer landscape and street but I am always looking to expand.</p>
+        </div>
         <div class="project-tile">
-              <p>Non-professional pictures</a> I've taken.</p>
-              <div class="gallery">
-                <img src="WebsitePhotos\20240104104400_IMG_8942.JPG">
-                <img src="WebsitePhotos\20240104101618_IMG_8910.JPG">
-                <img src="WebsitePhotos\20240103055944_IMG_8828.JPG">
-                <img src="WebsitePhotos\1000000443-01.jpeg">
+          <div class="gallery">
+            <img src="WebsitePhotos\20240104104400_IMG_8942.JPG">
+            <img src="WebsitePhotos\20240104101618_IMG_8910.JPG">
+            <img src="WebsitePhotos\20240103055944_IMG_8828.JPG">
+            <img src="WebsitePhotos\1000000443-01.jpeg">
           </div>
         </div>
-      </div>
       </section>
-      <section class="contact"> <!-- contact section updated-->
+      <section class="contact"> <!-- contact section updated https://github.com/toperkin/staticFormEmails/blob/master/README.md-->
         <div id="contact">
           <h1 id="contact" class="section-header">Contact</h1>
         </div>
-
+        <div class="section-details">
+          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required="true" placeholder="Jane Doe"></input>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required="true" placeholder="you@example.com"></input>
+            </div>
+            <div>
+              <label for="form-text">Message</label>
+              <textarea id="form-text" name="form=text" rows="5" cols="40" required="true" placeholder="Enter your text here"></textarea>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          </div>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <h1>Footer</h1>
+      <h1>Links coming soon!</h1>
 
       
     </footer>
